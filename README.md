@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # LLM Security Gateway — CSC 262 Lab Final
 
 **Student:** [Wasib Ali]  
