@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # LLM Security Gateway — CSC 262 Lab Final
 
 **Student:** [YOUR NAME]  
@@ -253,3 +254,6 @@ https://github.com/YOUR_USERNAME/llm-security-gateway-final
 ## Academic Integrity
 
 This work is original and submitted in accordance with course policy. No real API keys, personal CNICs, or private credentials are used anywhere in this repository.
+=======
+# llm-security-gateway-final
+>>>>>>> e80f2dba03e01d1205865ac378f01a1ea540d3d7
