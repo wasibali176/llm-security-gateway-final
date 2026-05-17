@@ -1,8 +1,8 @@
 <<<<<<< HEAD
 # LLM Security Gateway — CSC 262 Lab Final
 
-**Student:** [YOUR NAME]  
-**Registration:** [YOUR REG NO]  
+**Student:** [Wasib Ali]  
+**Registration:** [FA24-BCS-052]  
 **Course:** CSC 262 - Artificial Intelligence  
 **Instructor:** Tooba Tehreem  
 
@@ -247,7 +247,7 @@ Link: [ADD YOUR VIDEO LINK HERE]
 
 ## GitHub Repository
 
-https://github.com/YOUR_USERNAME/llm-security-gateway-final
+https://github.com/wasibali176/llm-security-gateway-final.git
 
 ---
 
