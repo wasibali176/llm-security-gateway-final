@@ -1,0 +1,72 @@
+{
+  "total_prompts": 155,
+  "rule_only_metrics": {
+    "accuracy": 0.5741935483870968,
+    "precision": 1.0,
+    "recall": 0.0958904109589041,
+    "f1": 0.175,
+    "fp": 0,
+    "fn": 66,
+    "tp": 7,
+    "tn": 82
+  },
+  "hybrid_metrics": {
+    "accuracy": 0.7096774193548387,
+    "precision": 1.0,
+    "recall": 0.3835616438356164,
+    "f1": 0.5544554455445545,
+    "fp": 0,
+    "fn": 45,
+    "tp": 28,
+    "tn": 82
+  },
+  "per_language_metrics": {
+    "en": {
+      "total": 132,
+      "attacks": 50,
+      "detected": 26,
+      "recall": 0.52
+    },
+    "ur": {
+      "total": 10,
+      "attacks": 10,
+      "detected": 1,
+      "recall": 0.1
+    },
+    "ko": {
+      "total": 8,
+      "attacks": 8,
+      "detected": 0,
+      "recall": 0.0
+    },
+    "mixed": {
+      "total": 5,
+      "attacks": 5,
+      "detected": 1,
+      "recall": 0.2
+    }
+  },
+  "decision_distribution": {
+    "MASK": 64,
+    "ALLOW": 63,
+    "BLOCK": 28
+  },
+  "expected_distribution": {
+    "BLOCK": 73,
+    "ALLOW": 58,
+    "MASK": 24
+  },
+  "error_count": 60,
+  "latency": {
+    "rule_only": {
+      "mean": 0.32883870967741935,
+      "median": 0.26,
+      "p95": 0.38
+    },
+    "hybrid": {
+      "mean": 42.589225806451616,
+      "median": 16.3,
+      "p95": 41.632999999999974
+    }
+  }
+}

@@ -1,0 +1,52 @@
+# LLM Security Gateway Configuration
+# CSC 262 - Lab Final
+
+server:
+  host: "0.0.0.0"
+  port: 8000
+  debug: false
+
+thresholds:
+  rule_score_block: 0.6
+  semantic_score_block: 0.7
+  final_risk_block: 0.75
+  final_risk_mask: 0.3
+  pii_weight: 0.2
+  secret_weight: 0.3
+  semantic_similarity_threshold: 0.75
+
+languages:
+  supported: ["en", "ur", "ko", "ar", "hi"]
+  default: "en"
+
+detectors:
+  rule_based:
+    enabled: true
+    weight: 0.4
+  semantic:
+    enabled: true
+    weight: 0.6
+    model: "tfidf_logreg"  # options: tfidf_logreg, sentence_transformer
+
+presidio:
+  score_threshold: 0.5
+  context_enhancement: true
+  custom_recognizers: true
+
+policy:
+  formula: "weighted_max"
+  # final_risk = max(rule_score * rule_w, semantic_score * sem_w) + pii_weight + secret_weight
+  rule_weight: 0.4
+  semantic_weight: 0.6
+
+logging:
+  level: "INFO"
+  audit_file: "logs/audit.log"
+  log_format: "json"
+
+llm:
+  # Set to "mock" to use mocked responses (no real API key needed)
+  provider: "mock"
+  # provider: "gemini"
+  # api_key: "YOUR_GEMINI_API_KEY"  # Do NOT hardcode real keys
+  model: "gemini-1.5-flash"
